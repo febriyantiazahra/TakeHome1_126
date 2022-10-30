@@ -12,5 +12,41 @@ and open the template in the editor.
     </head>
     <body>
         <div>== STRUK PEMBAYARAN ==</div>
+        <hr>
+        <p> Nama Barang         : <b th:text="${barang}"></b> </p>
+        <p> Harga Barang        : Rp. <b th:text="${harga}"></b> </p>
+        <p> Jumlah Beli         : <b th:text="${jumlah}"></b> </p>   
+        <p> Harga Awal          : Rp. <b th:text="${hitungawal}"></b> </p>
+        <p> Diskon              : <b th:text="${diskon}"></b> % </p>
+        <p> Total Harga Diskon  : Rp. <b th:text="${totalhargadiskon}"></b> </p>
+        <p> Harga Setelah Diskon : Rp. <b th:text="${hitungakhir}"></b> </p>
+        <p> Uang Bayar          : Rp. <b th:text="${bayar}"></b> </p>
+        <p> Kembalian           : Rp. <b th:text="${kembali}"></b> </p>
+        </hr>    
+        <footer>
+            <i>Credit by</i>
+            <p><b>Febriyanti Azahra Abidin<b></p>
+        </footer>
+        <style>
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: orange;
+                text-align: center;
+                background: #FFFACD;
+            }
+            div{
+                text-align: center;
+                background: #FFFACD;
+            }
+            body{
+                background: #E9967A;   
+            }
+            p{
+                margin-top: 30px;
+            }
+        </style>
     </body>
 </html>
